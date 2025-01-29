@@ -10,6 +10,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
+from datetime import datetime
+import json
 
 
 # Obter a chave da API
@@ -78,11 +80,33 @@ def llm():
 
 chain = llm()
 
+
+# Criar pasta para armazenar os chats, se não existir
+CHAT_DIR = "chats"
+os.makedirs(CHAT_DIR, exist_ok=True)
+
+def save_chat_to_json(chat_id, messages):
+    """Salva o histórico do chat em um arquivo JSON."""
+    filename = os.path.join(CHAT_DIR, f"chat_{chat_id}.json")
+    
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(messages, f, indent=4, ensure_ascii=False)
+        
 @app.post("/api/chat")
 async def chat(message: Message):
-    try:
+    try: 
+        chat_id = datetime.now().strftime("%Y%m%d_%H%M%S")  # Identificador único para o chat
         response = chain.invoke({"query": message.query})
+
+        # Criar estrutura do histórico do chat
+        chat_history = [
+            {"sender": "user", "text": message.query, "time": datetime.now().strftime("%H:%M:%S")},
+            {"sender": "bot", "text": response["result"], "time": datetime.now().strftime("%H:%M:%S")},
+        ]
+
+        # Salvar no arquivo JSON
+        save_chat_to_json(chat_id, chat_history)
+
         return {"reply": response["result"]}
     except Exception as e:
-        print(f"Erro interno: {str(e)}")  # Log no console
-        raise HTTPException(status_code=500, detail=f"Erro interno: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))

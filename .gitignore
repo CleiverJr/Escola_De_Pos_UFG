@@ -1,4 +1,4 @@
 **/.env
 **/__pycache__
 /escolapos
-
+/frontend/node_modules

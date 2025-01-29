@@ -17,10 +17,15 @@ const ChatbotWindow = () => {
     const sendMessage = async () => {
         if (!userMessage.trim()) return;
 
+
+        // Limpa o campo de entrada imediatamente
+        const currentUserMessage = userMessage; // Salva a mensagem atual antes de limpar
+        setUserMessage('');
+
         const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
         // Adiciona mensagem do usuário
-        setMessages([...messages, { sender: 'user', text: userMessage, time: currentTime }]);
+        setMessages([...messages, { sender: 'user', text: currentUserMessage, time: currentTime }]);
 
         try {
             // Faz a requisição para a API
@@ -38,7 +43,6 @@ const ChatbotWindow = () => {
             simulateTyping('Erro ao obter resposta. Tente novamente.');
         }
 
-        setUserMessage('');
     };
 
     // Função para simular a digitação do bot
@@ -68,7 +72,11 @@ const ChatbotWindow = () => {
         }, 100); // Velocidade da digitação (300ms por palavra)
     };
 
-
+    const handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            sendMessage();
+        }
+    };
 
     return (
         <>
@@ -125,6 +133,7 @@ const ChatbotWindow = () => {
                         type="text"
                         value={userMessage}
                         onChange={(e) => setUserMessage(e.target.value)}
+                        onKeyDown={handleKeyPress} // Adicionado para detectar a tecla Enter
                         placeholder="Digite sua mensagem..."
                     />
                     <button className="chatbot-button" onClick={sendMessage}>
