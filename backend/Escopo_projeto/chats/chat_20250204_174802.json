@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "qual o email?",
+        "time": "17:48:02"
+    },
+    {
+        "sender": "bot",
+        "text": "**Resposta:** O endereço de e-mail da coordenação do curso está disponível na página do curso.",
+        "time": "17:48:02"
+    }
+]

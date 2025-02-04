@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "Como é a forma de pag",
+        "time": "17:47:02"
+    },
+    {
+        "sender": "bot",
+        "text": "Resposta: A forma de pagamento para os cursos da Escola de Pós-Graduação da UFG é via boleto bancário ou Pix.",
+        "time": "17:47:02"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "O que eu perguntei antes?",
+        "time": "16:14:09"
+    },
+    {
+        "sender": "bot",
+        "text": "Peço desculpas, mas você não fez nenhuma pergunta anterior. Essa é a primeira interação entre nós. Estou aqui para ajudar com dúvidas sobre a Escola de Pós-Graduação da UFG ou a UFG. Qual é a sua pergunta?",
+        "time": "16:14:09"
+    }
+]

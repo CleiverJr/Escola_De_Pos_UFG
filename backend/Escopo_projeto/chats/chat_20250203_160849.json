@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "O que é a escola de pós?",
+        "time": "16:08:50"
+    },
+    {
+        "sender": "bot",
+        "text": "A pergunta é: \"O que é a escola de pós?\"\n\nResposta: A Escola de Pós da Universidade Federal de Goiás (UFG) é uma iniciativa que visa fortalecer e unificar a oferta de cursos de pós-graduação lato sensu, como especializações, MBAs e residências médicas e multiprofissionais.",
+        "time": "16:08:50"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "Esola de pós",
+        "time": "14:51:54"
+    },
+    {
+        "sender": "bot",
+        "text": "A pergunta não está completa. Por favor, verifique se há erros de digitação e tente novamente.",
+        "time": "14:51:54"
+    }
+]

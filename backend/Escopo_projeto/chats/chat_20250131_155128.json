@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "o que é a ufg?",
+        "time": "15:51:29"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá!\n\nSobre sua pergunta, a UFG é a Universidade Federal de Goiás, uma instituição de ensino superior pública brasileira. Ela é uma das principais universidades do país e oferece cursos de graduação, especialização, mestrado e doutorado em várias áreas do conhecimento.\n\nSe você tem alguma dúvida específica sobre a Escola de Pós-Graduação da UFG, estou aqui para ajudar!",
+        "time": "15:51:29"
+    }
+]

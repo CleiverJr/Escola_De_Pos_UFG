@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "15:45:59"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá!",
+        "time": "15:45:59"
+    }
+]

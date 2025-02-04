@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "Eu te amo!",
+        "time": "16:13:57"
+    },
+    {
+        "sender": "bot",
+        "text": "Que gentileza! Eu agradeço o elogio, mas como assistente virtual, estou aqui para ajudar com suas dúvidas sobre a Escola de Pós-Graduação da UFG e a UFG. Qual é a sua pergunta sobre matrícula?",
+        "time": "16:13:57"
+    }
+]

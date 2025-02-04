@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "me afle sobre a escola de pós",
+        "time": "16:10:10"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como assistente virtual especializado na Escola de Pós-Graduação da UFG e na UFG, posso ajudar com suas perguntas. Qual é a sua pergunta sobre a Escola de Pós-Graduação da UFG?",
+        "time": "16:10:10"
+    }
+]

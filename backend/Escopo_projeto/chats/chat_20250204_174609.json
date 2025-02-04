@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "Quem são os especialistas?",
+        "time": "17:46:10"
+    },
+    {
+        "sender": "bot",
+        "text": "A pergunta é: Quem são os especialistas?\n\nA resposta é: Os especialistas mencionados são os professores da Escola de Pós-Graduação da UFG. Eles têm expertise em suas respectivas áreas de especialização e contribuem para a formação e aprimoramento profissional dos alunos.",
+        "time": "17:46:10"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "15:44:27"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! É um prazer atender a sua pergunta. No entanto, parece que você não fez uma pergunta específica sobre a Escola de Pós-Graduação da UFG ou a UFG em geral. Se você tiver alguma dúvida ou precisar de informações sobre um curso, como mencionado na resposta, estou aqui para ajudar!",
+        "time": "15:44:27"
+    }
+]

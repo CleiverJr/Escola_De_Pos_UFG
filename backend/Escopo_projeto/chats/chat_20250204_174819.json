@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "qual o link?",
+        "time": "17:48:20"
+    },
+    {
+        "sender": "bot",
+        "text": "Peço desculpas, mas a pergunta \"qual o link?\" não está relacionada ao contexto da Escola de Pós-Graduação da UFG ou da UFG. Se você tiver alguma dúvida sobre a matrícula ou o curso, posso ajudar. Por favor, reformule a pergunta ou me forneça mais informações sobre o que você procura.",
+        "time": "17:48:20"
+    }
+]

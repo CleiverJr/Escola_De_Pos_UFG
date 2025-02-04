@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "16:08:34"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Muito obrigado pelo cumprimento! Como posso ajudar você hoje?",
+        "time": "16:08:34"
+    }
+]

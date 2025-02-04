@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "o que é a escola de pós da ufg?",
+        "time": "16:10:53"
+    },
+    {
+        "sender": "bot",
+        "text": "**Resposta:** A Escola de Pós da UFG é uma iniciativa que visa fortalecer e unificar a oferta de cursos de pós-graduação lato sensu, como especializações, MBAs e residências médicas e multiprofissionais. Possui 120 cursos e 400.000 discentes formados ao longo da história.",
+        "time": "16:10:53"
+    }
+]

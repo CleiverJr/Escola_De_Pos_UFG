@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "16:07:00"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Estou aqui para ajudar. Como você está começando, posso perguntar: você está procurando por informações sobre a Escola de Pós-Graduação da UFG ou sobre um curso específico?",
+        "time": "16:07:00"
+    }
+]

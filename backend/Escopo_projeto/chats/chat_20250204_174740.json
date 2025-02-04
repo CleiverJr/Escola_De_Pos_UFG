@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "qual o numero de contato?",
+        "time": "17:47:41"
+    },
+    {
+        "sender": "bot",
+        "text": "PERGUNTA: `qual o numero de contato?`\n\nRESPOSTA: O número de contato da Escola de Pós-Graduação da UFG é 62 3521-1076.",
+        "time": "17:47:41"
+    }
+]

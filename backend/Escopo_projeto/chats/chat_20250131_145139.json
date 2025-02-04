@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "Oi",
+        "time": "14:51:40"
+    },
+    {
+        "sender": "bot",
+        "text": "Não fui criado com o objetivo de responder com um simples \"Oi\". Como não há contexto ou informações relevantes para responder à pergunta, não tenho informações suficientes para responder. Por favor, reformule sua pergunta ou forneça mais informações para que eu possa tentar ajudar.",
+        "time": "14:51:40"
+    }
+]

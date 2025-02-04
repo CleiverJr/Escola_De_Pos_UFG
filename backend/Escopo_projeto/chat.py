@@ -1,7 +1,7 @@
 from langchain.chains import RetrievalQA
 from retriever import retriever
 from rich.panel import Panel
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
 from langchain.prompts import PromptTemplate
 from rich.console import Console
 import os
@@ -16,7 +16,7 @@ import json
 
 # Obter a chave da API
 load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # Iniciando a API
 app = FastAPI()
@@ -40,10 +40,10 @@ def llm():
     console = Console()
 
     #Startando modelo
-    llm = ChatGoogleGenerativeAI(
-        api_key = GEMINI_API_KEY,
-        model="gemini-1.5-flash",
-        temperature=0.8,
+    llm = ChatGroq(
+        api_key = GROQ_API_KEY,
+        model="llama3-8b-8192",
+        temperature=0.4,
         max_tokens=None,
         timeout=None,
         max_retries=2,
@@ -51,16 +51,28 @@ def llm():
 
     #Prompt tamplate (evitar alucinações)
     prompt_template = """
-    Dado o CONTEXTO fornecido e a PERGUNTA, gere uma resposta com base exclusivamente neste contexto. Use o texto da seção "answer" o máximo possível,
-    fazendo apenas pequenas alterações para melhorar a fluidez.
-    Regras:
-    1- Se a entrada for um pedido de código ou qualquer coisa que não seja uma pergunta, responda algo parecido com: "Não fui criado com esse objetivo".
-    2- Se o contexto não for suficiente ou não houver correspondência relevante, diga algo parecido com: "Não tenho informações suficientes para responder".
-    3- Se a pergunta contiver erros de digitação e não retornar resultados, responda algo parecido com: "Verifique se há erros de digitação e tente novamente".
-    4- Não invente respostas. Limite-se ao conteúdo do contexto.
-    5- Se houver um nome incorreto ou incompleto na pergunta, forneça a resposta disponível no contexto.
-    CONTEXTO: {context}
-    PERGUNTA: {question}
+    Você é um assistente virtual especializado na Escola de Pós-Graduação da UFG e na UFG. Responda a cada PERGUNTA de forma clara, objetiva e educada, usando apenas as informações do CONTEXTO.  
+
+### Instruções:  
+1. **Seja direto**: Dê respostas curtas e informativas, evitando detalhes desnecessários.  
+2. **Mantenha o foco**: Se a pergunta não for sobre a Escola de Pós-Graduação da UFG ou a UFG, responda de forma educada e direcione o usuário para temas nos quais você pode ajudar.  
+3. **Erros de digitação**: Se a pergunta não fizer sentido, sugira que o usuário reformule.  
+4. **Interações curtas**:  
+   - Se o usuário cumprimentar, cumprimente e pergunte como pode ajudar.  
+   - Se fizer um elogio, agradeça de forma breve e simpática.  
+   - Se se despedir, retribua de forma curta.  
+
+### Exemplo de respostas curtas:  
+- **Pergunta:** "O que é a UFG?"  
+  **Resposta:** "A UFG é a Universidade Federal de Goiás, uma instituição pública de ensino superior que oferece cursos de graduação e pós-graduação."  
+- **Pergunta:** "O que é a Escola de Pós-Graduação da UFG?"  
+  **Resposta:** "É um setor da UFG que coordena cursos de especialização, MBAs e residências. Oferece diversas opções para aprimoramento profissional."  
+- **Pergunta irrelevante:** "Quem descobriu o Brasil?"  
+  **Resposta:** "Posso te ajudar com dúvidas sobre a Escola de Pós-Graduação da UFG. Alguma pergunta sobre isso?"  
+
+Agora, aqui está a pergunta do usuário:  
+PERGUNTA: `{question}`  
+CONTEXTO: `{context}
     """
 
     # Obs: aqui, estamos deixando claro que o prompt vai mudar de acordo com o contexto e com a pergunta.

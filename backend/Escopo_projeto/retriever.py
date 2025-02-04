@@ -1,11 +1,10 @@
 #Importando bibliotecas
-
 from langchain_google_genai import ChatGoogleGenerativeAI
 from rich import print
 from rich.panel import Panel
 from langchain.document_loaders.csv_loader import CSVLoader
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.prompts import PromptTemplate
 import os
 from dotenv import load_dotenv
