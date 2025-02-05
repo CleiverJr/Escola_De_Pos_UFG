@@ -1,0 +1,42 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "18:12:30"
+    },
+    {
+        "sender": "bot",
+        "text": "Oi! Como posso ajudar você hoje com relação à Escola de Pós-Graduação da UFG ou à UFG?",
+        "time": "18:12:30"
+    },
+    {
+        "sender": "user",
+        "text": "Quem são os especialistas?",
+        "time": "18:12:41"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso te ajudar hoje?\n\nA pergunta \"Quem são os especialistas?\" é um pouco vaga.  O contexto mostra vários especialistas listados como professores da Escola de Pós-Graduação da UFG, em diversas áreas.  Para te ajudar melhor, por favor, especifique em que área você está interessado.",
+        "time": "18:12:41"
+    },
+    {
+        "sender": "user",
+        "text": "Aceita pix?",
+        "time": "18:14:06"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas sua pergunta não está relacionada à Escola de Pós-Graduação da UFG ou à UFG. Posso te ajudar com alguma dúvida sobre esses temas?",
+        "time": "18:14:06"
+    },
+    {
+        "sender": "user",
+        "text": "Pode pagar com pix?",
+        "time": "18:14:29"
+    },
+    {
+        "sender": "bot",
+        "text": "Sim, o pagamento dos cursos da Escola de Pós-Graduação da UFG pode ser feito via Pix.",
+        "time": "18:14:29"
+    }
+]

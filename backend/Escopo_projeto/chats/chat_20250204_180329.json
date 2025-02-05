@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "Quem são os especialistas?",
+        "time": "18:03:30"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder a pergunta sobre quem são os especialistas de forma completa. O contexto fornece informações sobre professores e seus currículos, incluindo especializações, mas não lista todos os especialistas da Escola de Pós da UFG.  A resposta sobre Francine do Couto Lima Moreira, por exemplo, detalha suas especializações, mas não é uma lista exaustiva de todos os especialistas.",
+        "time": "18:03:30"
+    }
+]

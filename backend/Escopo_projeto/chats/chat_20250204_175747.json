@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "17:57:48"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.",
+        "time": "17:57:48"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "18:00:16"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Sou o assistente virtual da Escola de Pós da UFG. Como posso te ajudar?",
+        "time": "18:00:16"
+    },
+    {
+        "sender": "user",
+        "text": "Quem são os especialistas?",
+        "time": "18:01:03"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Sou o assistente virtual da Escola de Pós da UFG.  Baseado nas informações disponíveis, os especialistas são:  Francine do Couto Lima Moreira (Odontologia para Pacientes com Necessidades Especiais, Odontologia Hospitalar, Odontopediatria).  A lista completa de professores, que podem incluir outros especialistas, também está disponível, mas não especifica suas áreas de especialização individualmente além do caso de Francine.",
+        "time": "18:01:03"
+    },
+    {
+        "sender": "user",
+        "text": "Qual foi a primeira pergunta que te fiz?",
+        "time": "18:02:20"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Sou o assistente virtual da Escola de Pós da UFG.  A primeira pergunta que você fez foi: \"Tenho dúvidas sobre a minha matrícula, com quem devo falar?\".",
+        "time": "18:02:20"
+    }
+]

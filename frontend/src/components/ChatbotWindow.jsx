@@ -14,6 +14,17 @@ const ChatbotWindow = () => {
         setIsOpen(!isOpen);
     };
 
+    const startNewChat = async () => {
+        try {
+            const response = await axios.get("http://127.0.0.1:8000/api/new_chat");
+            console.log(response.data); // Veja o que a API retorna no console
+        } catch (error) {
+            console.error("Erro ao iniciar novo chat:", error);
+        }
+    };
+    
+    
+
     const sendMessage = async () => {
         if (!userMessage.trim()) return;
 
@@ -80,7 +91,7 @@ const ChatbotWindow = () => {
 
     return (
         <>
-            <FloatingButton onClick={toggleChatbot} />
+            <FloatingButton onClick={toggleChatbot} startNewChat={startNewChat} />
 
             <div className={`chatbot-container ${isOpen ? 'visible' : ''}`}>
                 <div className="chatbot-header">Chatbot</div>

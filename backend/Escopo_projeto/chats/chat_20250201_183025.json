@@ -1,0 +1,112 @@
+[
+    {
+        "sender": "user",
+        "text": "ola",
+        "time": "18:30:26"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.",
+        "time": "18:30:26"
+    },
+    {
+        "sender": "user",
+        "text": "teste",
+        "time": "18:30:31"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.",
+        "time": "18:30:31"
+    },
+    {
+        "sender": "user",
+        "text": "1",
+        "time": "18:30:37"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.  A pergunta \"1\" não fornece contexto suficiente para determinar a qual pessoa ou informação ela se refere.",
+        "time": "18:30:37"
+    },
+    {
+        "sender": "user",
+        "text": "2",
+        "time": "18:30:39"
+    },
+    {
+        "sender": "bot",
+        "text": "Para obter mais informações sobre um curso, consulte a página do curso ou entre em contato com a Escola de Pós UFG pelo telefone, WhatsApp ou e-mail.",
+        "time": "18:30:39"
+    },
+    {
+        "sender": "user",
+        "text": "3",
+        "time": "18:30:43"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.",
+        "time": "18:30:43"
+    },
+    {
+        "sender": "user",
+        "text": "4",
+        "time": "18:30:50"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.",
+        "time": "18:30:50"
+    },
+    {
+        "sender": "user",
+        "text": "teste",
+        "time": "18:32:27"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.",
+        "time": "18:32:27"
+    },
+    {
+        "sender": "user",
+        "text": "teste",
+        "time": "18:32:36"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.",
+        "time": "18:32:36"
+    },
+    {
+        "sender": "user",
+        "text": "1",
+        "time": "18:32:41"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.  A pergunta \"1\" não fornece contexto suficiente para determinar a qual pessoa ou informação ela se refere.",
+        "time": "18:32:41"
+    },
+    {
+        "sender": "user",
+        "text": "teste",
+        "time": "18:33:05"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.",
+        "time": "18:33:05"
+    },
+    {
+        "sender": "user",
+        "text": "teste",
+        "time": "18:33:14"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.",
+        "time": "18:33:14"
+    }
+]

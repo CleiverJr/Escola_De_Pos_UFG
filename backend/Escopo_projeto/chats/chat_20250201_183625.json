@@ -1,0 +1,32 @@
+[
+    {
+        "sender": "user",
+        "text": "teste",
+        "time": "18:36:27"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.",
+        "time": "18:36:27"
+    },
+    {
+        "sender": "user",
+        "text": "1",
+        "time": "18:36:32"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.  A pergunta \"1\" não fornece contexto suficiente para determinar a qual pessoa ou informação a pergunta se refere.",
+        "time": "18:36:32"
+    },
+    {
+        "sender": "user",
+        "text": "2",
+        "time": "18:36:36"
+    },
+    {
+        "sender": "bot",
+        "text": "Não tenho informações suficientes para responder.  O contexto fornece informações sobre algumas pessoas e cursos, mas não há uma pergunta numerada \"2\".",
+        "time": "18:36:36"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "Quem são os professores?",
+        "time": "23:10:07"
+    },
+    {
+        "sender": "bot",
+        "text": "A Escola de Pós-Graduação da UFG não fornece informações sobre os professores em geral. No entanto, como mencionado anteriormente, você pode entrar em contato com a coordenação do curso para obter informações sobre os professores do seu curso específico.",
+        "time": "23:10:07"
+    }
+]
