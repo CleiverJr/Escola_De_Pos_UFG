@@ -1,8 +1,13 @@
-from langchain.chains import RetrievalQA
-from retriever import retriever
-from rich.panel import Panel
+from langchain_community.chat_message_histories import ChatMessageHistory
+from langchain_core.chat_history import BaseChatMessageHistory
+from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_groq import ChatGroq
-from langchain.prompts import PromptTemplate
+from langchain.chains import create_history_aware_retriever
+from langchain_core.prompts import MessagesPlaceholder
+from langchain_core.prompts import ChatPromptTemplate
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain.chains import create_retrieval_chain
+from retriever import retriever
 from rich.console import Console
 import os
 
@@ -30,13 +35,14 @@ app.add_middleware(
     allow_headers=["*"],  # Permitir todos os cabeçalhos
 )
 
+retriever = retriever()
+
 # Definindo formato da requisição
 class Message(BaseModel):
     query: str
 
 def llm():
-
-
+    #Console
     console = Console()
 
     #Startando modelo
@@ -48,47 +54,73 @@ def llm():
         timeout=None,
         max_retries=2,
     )
-
-    #Prompt tamplate (evitar alucinações)
-    prompt_template = """
-    Você é um assistente virtual especializado na Escola de Pós-Graduação da UFG e na UFG. Responda a cada PERGUNTA de forma clara, objetiva e educada, usando apenas as informações do CONTEXTO.  
-
-### Instruções:  
-1. **Seja direto**: Dê respostas curtas e informativas, evitando detalhes desnecessários.  
-2. **Mantenha o foco**: Se a pergunta não for sobre a Escola de Pós-Graduação da UFG ou a UFG, responda de forma educada e direcione o usuário para temas nos quais você pode ajudar.  
-3. **Erros de digitação**: Se a pergunta não fizer sentido, sugira que o usuário reformule.  
-4. **Interações curtas**:  
-   - Se o usuário cumprimentar, cumprimente e pergunte como pode ajudar.  
-   - Se fizer um elogio, agradeça de forma breve e simpática.  
-   - Se se despedir, retribua de forma curta.  
-
-### Exemplo de respostas curtas:  
-- **Pergunta:** "O que é a UFG?"  
-  **Resposta:** "A UFG é a Universidade Federal de Goiás, uma instituição pública de ensino superior que oferece cursos de graduação e pós-graduação."  
-- **Pergunta:** "O que é a Escola de Pós-Graduação da UFG?"  
-  **Resposta:** "É um setor da UFG que coordena cursos de especialização, MBAs e residências. Oferece diversas opções para aprimoramento profissional."  
-- **Pergunta irrelevante:** "Quem descobriu o Brasil?"  
-  **Resposta:** "Posso te ajudar com dúvidas sobre a Escola de Pós-Graduação da UFG. Alguma pergunta sobre isso?"  
-
-Agora, aqui está a pergunta do usuário:  
-PERGUNTA: `{question}`  
-CONTEXTO: `{context}
-    """
-
-    # Obs: aqui, estamos deixando claro que o prompt vai mudar de acordo com o contexto e com a pergunta.
-    PROMPT = PromptTemplate(
-        template=prompt_template, input_variables=["context", "question"]
+   
+    #Reformular a pergunta do usuário para que seja independente do histórico de bate-papo
+    contextualize_q_system_prompt = (
+    "Dado um histórico de bate-papo e a pergunta mais recente do usuário"
+    "que pode fazer referência ao contexto no histórico de bate-papo,"
+    "formule uma pergunta independente que possa ser entendida sem o histórico de bate-papo."
+    "NÃO responda à pergunta, apenas reformule-a se necessário e devolva-a como está."
     )
-    chain_type_kwargs = {"prompt": PROMPT}
 
-    #integrando LLM com retriver
-    chain = RetrievalQA.from_chain_type(llm=llm,
-                                chain_type="stuff",
-                                retriever=retriever(),
-                                input_key="query",
-                                return_source_documents=True,
-                                chain_type_kwargs=chain_type_kwargs)
-    return chain 
+    contextualize_q_prompt = ChatPromptTemplate.from_messages(
+        [
+            ("system", contextualize_q_system_prompt),
+            MessagesPlaceholder("chat_history"),
+            ("human", "{input}"),
+        ]
+    )
+
+    history_aware_retriever = create_history_aware_retriever(
+        llm, retriever, contextualize_q_prompt
+    )
+
+    #chain
+    system_prompt = (
+        "Você é um assistente virtual especializado na Escola de Pós-Graduação da UFG e na UFG."
+        "Responda a cada PERGUNTA de forma clara, objetiva e educada, usando apenas as informações do CONTEXTO." 
+
+    "Instruções"  
+    "1.Seja direto: Dê respostas curtas e informativas, evitando detalhes desnecessários."  
+    "2.Mantenha o foco: Se a pergunta não for sobre a Escola de Pós-Graduação da UFG ou a UFG, responda de forma educada e direcione o usuário para temas nos quais você pode ajudar."
+    "3.Erros de digitação**: Se a pergunta não fizer sentido, sugira que o usuário reformule." 
+    "4.Interações curtas: Seja breve e educado. Não faça perguntas ao usuário, a menos que seja necessário."
+    "5.Respostas educadas: Sempre seja educado e profissional, mesmo se o usuário não for."
+    "6. Não responda fora do contexto: Responda apenas com base nas informações fornecidas no contexto."
+    "PERGUNTA: `{input}`"
+    "CONTEXTO: `{context}"
+    )
+
+    qa_prompt = ChatPromptTemplate.from_messages(
+        [
+            ("system", system_prompt),
+            MessagesPlaceholder("chat_history"),
+            ("human", "{input}"),
+        ]
+    )
+    question_answer_chain = create_stuff_documents_chain(llm, qa_prompt)
+
+    rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chain)   
+
+    
+    #histórico de mensagens
+    store = {}
+
+    def get_session_history(session_id: str) -> BaseChatMessageHistory:
+        if session_id not in store:
+            store[session_id] = ChatMessageHistory()
+        return store[session_id]
+    
+    #chain com histórico de mensagens
+    conversational_rag_chain = RunnableWithMessageHistory(
+        rag_chain,
+        get_session_history,
+        input_messages_key="input",
+        history_messages_key="chat_history",
+        output_messages_key="answer",
+    )
+    
+    return conversational_rag_chain 
 
 chain = llm()
 
@@ -108,7 +140,10 @@ def save_chat_to_json(chat_id, messages):
 async def chat(message: Message):
     try: 
         chat_id = datetime.now().strftime("%Y%m%d_%H%M%S")  # Identificador único para o chat
-        response = chain.invoke({"query": message.query})
+        response = chain.invoke({"input": message.query},
+                    config={
+        "configurable": {"session_id": "abc123"}},  # constructs a key "abc123" in `store`.
+                                )["answer"]
 
         # Criar estrutura do histórico do chat
         chat_history = [

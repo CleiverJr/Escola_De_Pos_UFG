@@ -9,12 +9,9 @@ from langchain.prompts import PromptTemplate
 import os
 from dotenv import load_dotenv
 
-
 # Obter a chave da API
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-
-
 
 def retriever():
         #importando o banco de dados
