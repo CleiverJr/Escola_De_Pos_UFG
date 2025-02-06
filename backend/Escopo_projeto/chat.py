@@ -1,19 +1,13 @@
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain_groq import ChatGroq
-from rich import print
-from langchain.document_loaders.csv_loader import CSVLoader
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains import create_history_aware_retriever
 from langchain_core.prompts import MessagesPlaceholder
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_retrieval_chain
-from langchain.chains import RetrievalQA
 from retriever import retriever
-from langchain.prompts import PromptTemplate
 from rich.console import Console
 import os
 
@@ -27,7 +21,7 @@ import json
 
 # Obter a chave da API
 load_dotenv()
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Iniciando a API
 app = FastAPI()
@@ -52,9 +46,9 @@ def llm():
     console = Console()
 
     #Startando modelo
-    llm = ChatGroq(
-        api_key = GROQ_API_KEY,
-        model="llama3-8b-8192",
+    llm = ChatGoogleGenerativeAI(
+        api_key = GEMINI_API_KEY,
+        model="gemini-1.5-flash",
         temperature=0.4,
         max_tokens=None,
         timeout=None,

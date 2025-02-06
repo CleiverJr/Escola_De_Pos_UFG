@@ -1,0 +1,12 @@
+[
+    {
+        "sender": "user",
+        "text": "Quem são os professores?",
+        "time": "18:04:05"
+    },
+    {
+        "sender": "bot",
+        "text": "Os professores da Escola de Pós-Graduação da UFG listados são: Ana Carolina Figueiredo Modesto; José Humberto Rodrigues dos Anjos; Breno Delfino Amaral Freitas; Virgínia Farias Alves; Karla Emmanuela Ribeiro Hora; Ane Trento; Wagner Bandeira; Thaila Corrêa Castral; Raquel Santiago; Vanessa Gisele Pasqualotto Severino; Ilirio José Rech; Ricardo Limongi; Regis Puppim; Márcio de Carvalho Pires; Luiz Carlos da Cunha; Elton Clementino da Silva; Alverne Passos Barbosa; Marina Carmello Cunha; Aysha Jussara Ivonilde Carrim; Danielle Guimarães A. Diniz; Derblai Casaroli; Roberto José de Freitas; Diogo Pedrosa Correa da Silva; Larissa Matuda Macedo; Eric de Souza Gil; Carolina Chaves Soares; Jacson Rodrigues Barbosa; Mércia Pandolfo Provin; Rodrigo Mello Gomes; Camila Alves de Melo; Diego Basile Colugnati; Daniel Alves Rosa; Claudio Andre Barbosa de Lira; Carlos Henrique Xavier; Carlos Henrique de Castro; Manoel Francisco Biancardi; Gustavo Rodrigues Pedrino; Aline Priscila Pansani; Nádia do Lago Costa; Francine do Couto Lima Moreira.",
+        "time": "18:04:05"
+    }
+]
