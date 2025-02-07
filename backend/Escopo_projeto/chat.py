@@ -135,12 +135,24 @@ chain = llm()
 CHAT_DIR = "chats"
 os.makedirs(CHAT_DIR, exist_ok=True)
 
-def save_chat_to_json(chat_id, messages):
-    """Salva o histórico do chat em um arquivo JSON."""
+def save_chat_to_json(chat_id, new_messages):
+    """Acumula o histórico do chat em um arquivo JSON."""
     filename = os.path.join(CHAT_DIR, f"chat_{chat_id}.json")
     
+    # Verifica se o arquivo já existe para acumular as mensagens
+    if os.path.exists(filename):
+        with open(filename, "r", encoding="utf-8") as f:
+            existing_messages = json.load(f)
+    else:
+        existing_messages = []
+
+    # Adiciona as novas mensagens ao histórico existente
+    updated_messages = existing_messages + new_messages
+
+    # Salva o histórico atualizado no arquivo JSON
     with open(filename, "w", encoding="utf-8") as f:
-        json.dump(messages, f, indent=4, ensure_ascii=False)
+        json.dump(updated_messages, f, indent=4, ensure_ascii=False)
+
 
 
 # Dicionário para armazenar sessões de chat

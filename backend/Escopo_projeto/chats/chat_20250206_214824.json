@@ -1,0 +1,62 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "21:48:25"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Eu sou um assistente virtual especializado na Escola de Pós-Graduação da UFG e na UFG. Estou aqui para ajudar. Qual é o seu objetivo ou qual pergunta você gostaria de fazer sobre a Escola de Pós-Graduação da UFG ou a UFG?",
+        "time": "21:48:25"
+    },
+    {
+        "sender": "user",
+        "text": "Quem são os professores da escola de pós?",
+        "time": "21:53:00"
+    },
+    {
+        "sender": "bot",
+        "text": "A Escola de Pós da UFG não fornece informações sobre os professores em seu site ou em outras fontes oficiais. No entanto, você pode obter informações sobre os cursos e professores específicos ao acessar a página de cada curso ou contatar a Escola de Pós UFG diretamente.",
+        "time": "21:53:00"
+    },
+    {
+        "sender": "user",
+        "text": "Quais são as formas de pagamento?",
+        "time": "21:53:30"
+    },
+    {
+        "sender": "bot",
+        "text": "Os cursos da Escola de Pós UFG podem ser pagos via boleto bancário ou Pix.",
+        "time": "21:53:30"
+    },
+    {
+        "sender": "user",
+        "text": "Quais são as especializações?",
+        "time": "21:53:53"
+    },
+    {
+        "sender": "bot",
+        "text": "A Escola de Pós da UFG oferece várias especializações, incluindo:\n\n* ESPECIALIZAÇÃO EM Construção Civil\n* PÓS-GRADUAÇÃO EM Controladoria e Finanças\n* PÓS-GRADUAÇÃO EM Direito Constitucional e Teoria da Constituição\n* ESPECIALIZAÇÃO EM Direito e Processo do Trabalho para Advogados\n* ESPECIALIZAÇÃO EM Direito e Processo Eleitoral\n* ESPECIALIZAÇÃO EM Enfermagem Dermatológica com ênfase na Assistência à Pessoas com Feridas\n* ESPECIALIZAÇÃO EM Enfermagem em Unidade de Terapia Intensiva em Neonatologia\n* PÓS-GRADUAÇÃO EM Enfrentamento à Violência Contra Mulheres e Meninas\n* ESPECIALIZAÇÃO EM Ensino de Línguas Adicionais, de Acolhimento e de Herança\n* ESPECIALIZAÇÃO EM Estudos Literários e Ensino de Literatura\n* PÓS-GRADUAÇÃO EM Farmácia Oncológica\n* ESPECIALIZAÇÃO EM Finanças e Gestão Estratégica de Negócios\n* ESPECIALIZAÇÃO EM Fisiologia Humana Aplicada às Ciências da Saúde\n* ESPECIALIZAÇÃO EM Gestão e Qualidade Ambiental\n* ESPECIALIZAÇÃO EM Gestão Pública\n* ESPECIALIZAÇÃO EM Letramento Informacional: Educação para Informação\n* ESPECIALIZAÇÃO EM Linguística Aplicada: Ensino-Aprendizagem de Línguas Adicionais\n* MBA EM Marketing Estratégico\n* ESPECIALIZAÇÃO EM Moda e Inovação\n* ESPECIALIZAÇÃO EM Odontologia Hospitalar\n* ESPECIALIZAÇÃO EM Perícia, Auditoria e Licenciamento Ambiental\n* MBA em Planejamento Tributário e Compliance Fiscal\n* ESPECIALIZAÇÃO EM Políticas Públicas\n* ESPECIALIZAÇÃO EM Práticas Pedagógicas na Educação Básica\n* ESPECIALIZAÇÃO EM Psicologia dos Processos Educativos\n* RESIDÊNCIA EM Tecnologia da Informação\n* ESPECIALIZAÇÃO EM Vigilância Epidemiológica\n* ESPECIALIZAÇÃO EM Vitivinicultura, Serviços e Produtos.\n\nÉ importante notar que essa lista pode não ser completa ou atualizada, e é recomendável verificar com a Escola de Pós UFG para obter informações mais precisas e atualizadas sobre as especializações oferecidas.",
+        "time": "21:53:53"
+    },
+    {
+        "sender": "user",
+        "text": "Quem descobriu o Brasil?",
+        "time": "21:57:21"
+    },
+    {
+        "sender": "bot",
+        "text": "Essa pergunta não está relacionada à Escola de Pós-Graduação da UFG ou à UFG. A descoberta do Brasil é um tema histórico amplo e complexo, e é importante notar que a história é escrita por vários autores e é sujeita a interpretações e debates.",
+        "time": "21:57:21"
+    },
+    {
+        "sender": "user",
+        "text": "dasdoasdas",
+        "time": "21:57:39"
+    },
+    {
+        "sender": "bot",
+        "text": "Peço desculpas, mas não entendi a pergunta. Se houver alguma dúvida ou problema específico que você gostaria de discutir sobre a Escola de Pós-Graduação da UFG ou a UFG, estou aqui para ajudar. Por favor, reformule a pergunta ou forneça mais informações para que eu possa entender melhor e responder de forma mais eficaz.",
+        "time": "21:57:39"
+    }
+]
