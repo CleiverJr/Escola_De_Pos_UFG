@@ -1,0 +1,42 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "09:45:55"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você hoje?",
+        "time": "09:45:55"
+    },
+    {
+        "sender": "user",
+        "text": "Qual foi a ultima pergunta?",
+        "time": "09:46:06"
+    },
+    {
+        "sender": "bot",
+        "text": "A última pergunta foi: \"Tenho dúvidas sobre a minha matrícula, com quem devo falar?\"",
+        "time": "09:46:06"
+    },
+    {
+        "sender": "user",
+        "text": "Fale sobre o curso de vitivinicultura",
+        "time": "09:46:57"
+    },
+    {
+        "sender": "bot",
+        "text": "O curso de Especialização em Vitivinicultura, Serviços e Produtos destina-se a graduados em diversas áreas, com prioridade para Enologia, Agronomia, Farmácia, Química, Engenharia de Alimentos, Engenharia Química e Gastronomia.  Tem como objetivo capacitar profissionais para o setor vitivinícola.  As aulas são em modalidade híbrida, ocorrem às sextas (18h às 22h) e sábados (8h às 12h e 14h às 18h), com duração de 18 meses.  O curso é reconhecido pelo MEC e começa em 07/03/2025. A taxa de matrícula é R$ 238,00 e a mensalidade R$ 484,00. Mais informações podem ser encontradas em: https://escoladepos.ufg.br/cursos/vitivinicultura-produtos-e-servicos-vitivini/",
+        "time": "09:46:57"
+    },
+    {
+        "sender": "user",
+        "text": "Tem pre requisitos?",
+        "time": "09:47:12"
+    },
+    {
+        "sender": "bot",
+        "text": "Para verificar os pré-requisitos, consulte o edital e a página do curso.",
+        "time": "09:47:12"
+    }
+]

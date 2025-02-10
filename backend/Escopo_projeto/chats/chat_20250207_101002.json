@@ -1,0 +1,32 @@
+[
+    {
+        "sender": "user",
+        "text": "Alverne Passos Barbosa",
+        "time": "10:10:04"
+    },
+    {
+        "sender": "bot",
+        "text": "Sócio proprietário da Vinícola Serra das Galés (Paranaú - Goiás).  Conhecimentos em viticultura, enoturismo, enogastronomia e processos de vinificação. Docente do curso Vitivinicultura, Serviços e Produtos na Escola de Pós.",
+        "time": "10:10:04"
+    },
+    {
+        "sender": "user",
+        "text": "Quais sao os professores de Vitivinicultura",
+        "time": "10:10:42"
+    },
+    {
+        "sender": "bot",
+        "text": "Os professores de Vitivinicultura, Serviços e Produtos são Alverne Passos Barbosa, Diogo Pedrosa Correa da Silva e Roberto José de Freitas.",
+        "time": "10:10:42"
+    },
+    {
+        "sender": "user",
+        "text": "Quais sao os professores de farmacia oncologica?",
+        "time": "10:11:32"
+    },
+    {
+        "sender": "bot",
+        "text": "Mércia Pandolfo Provin e Luiz Carlos da Cunha.",
+        "time": "10:11:32"
+    }
+]

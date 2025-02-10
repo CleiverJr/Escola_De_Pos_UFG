@@ -1,0 +1,72 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "09:48:13"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você hoje em relação à Escola de Pós-Graduação da UFG ou à UFG?",
+        "time": "09:48:13"
+    },
+    {
+        "sender": "user",
+        "text": "Quem é o Breno?",
+        "time": "10:01:47"
+    },
+    {
+        "sender": "bot",
+        "text": "Breno Delfino Amaral Freitas é advogado, professor do curso de Direito do Centro Universitário de Inhumas (UNIMAIS), mestre em Desenvolvimento e Planejamento Territorial pela PUC Goiás (2024), e professor certificado pela Escola Superior da Advocacia de Goiás (ESA/OAB-GO).  Ele também é professor da Escola de Pós-Graduação da UFG.",
+        "time": "10:01:47"
+    },
+    {
+        "sender": "user",
+        "text": "Quem são os professores?",
+        "time": "10:02:05"
+    },
+    {
+        "sender": "bot",
+        "text": "Os professores da Escola de Pós-Graduação da UFG são: Ana Carolina Figueiredo Modesto; José Humberto Rodrigues dos Anjos; Breno Delfino Amaral Freitas; Virgínia Farias Alves; Karla Emmanuela Ribeiro Hora; Ane Trento; Wagner Bandeira; Thaila Corrêa Castral; Raquel Santiago; Vanessa Gisele Pasqualotto Severino; Ilirio José Rech; Ricardo Limongi; Regis Puppim; Márcio de Carvalho Pires; Luiz Carlos da Cunha; Elton Clementino da Silva; Alverne Passos Barbosa; Marina Carmello Cunha; Aysha Jussara Ivonilde Carrim; Danielle Guimarães A. Diniz; Derblai Casaroli; Roberto José de Freitas; Diogo Pedrosa Correa da Silva; Larissa Matuda Macedo; Eric de Souza Gil; Carolina Chaves Soares; Jacson Rodrigues Barbosa; Mércia Pandolfo Provin; Rodrigo Mello Gomes; Camila Alves de Melo; Diego Basile Colugnati; Daniel Alves Rosa; Claudio Andre Barbosa de Lira; Carlos Henrique Xavier; Carlos Henrique de Castro; Manoel Francisco Biancardi; Gustavo Rodrigues Pedrino; Aline Priscila Pansani; Nádia do Lago Costa; Francine do Couto Lima Moreira.",
+        "time": "10:02:05"
+    },
+    {
+        "sender": "user",
+        "text": "Quem são os professores de vitivinicultura?",
+        "time": "10:02:58"
+    },
+    {
+        "sender": "bot",
+        "text": "O texto fornecido não lista os nomes dos professores de vitivinicultura.  Ele descreve o curso de especialização, mas não inclui a lista de docentes.",
+        "time": "10:02:58"
+    },
+    {
+        "sender": "user",
+        "text": "O professor breno da aula de que?",
+        "time": "10:03:34"
+    },
+    {
+        "sender": "bot",
+        "text": "O contexto indica que Breno Delfino Amaral Freitas é professor do curso de Direito do Centro Universitário de Inhumas (UNIMAIS).  Não há informação sobre as disciplinas específicas que ele leciona na Escola de Pós-Graduação da UFG.",
+        "time": "10:03:34"
+    },
+    {
+        "sender": "user",
+        "text": "Alverne Passos Barbosa",
+        "time": "10:06:12"
+    },
+    {
+        "sender": "bot",
+        "text": "Alverne Passos Barbosa é sócio proprietário da Vinícola Serra das Galés (Paranaú - Goiás).  Ele possui conhecimentos em viticultura, enoturismo, enogastronomia e processos de vinificação.  Também é professor na Escola de Pós-Graduação da UFG.",
+        "time": "10:06:12"
+    },
+    {
+        "sender": "user",
+        "text": "Qual curso ele ministra?",
+        "time": "10:06:42"
+    },
+    {
+        "sender": "bot",
+        "text": "O texto não especifica qual curso Alverne Passos Barbosa ministra na Escola de Pós-Graduação da UFG.",
+        "time": "10:06:42"
+    }
+]

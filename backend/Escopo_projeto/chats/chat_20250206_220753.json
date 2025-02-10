@@ -1,0 +1,62 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "22:07:57"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você em relação à Escola de Pós-Graduação da UFG ou à UFG?",
+        "time": "22:07:57"
+    },
+    {
+        "sender": "user",
+        "text": "Quem são os professores da escola de pós?",
+        "time": "22:08:06"
+    },
+    {
+        "sender": "bot",
+        "text": "Os professores da Escola de Pós são: Ana Carolina Figueiredo Modesto; José Humberto Rodrigues dos Anjos; Breno Delfino Amaral Freitas; Virgínia Farias Alves; Karla Emmanuela Ribeiro Hora; Ane Trento; Wagner Bandeira; Thaíla Corrêa Castral; Raquel Santiago; Vanessa Gisele Pasqualotto Severino; Ilirio José Rech; Ricardo Limongi; Regis Puppim; Márcio de Carvalho Pires; Luiz Carlos da Cunha; Elton Clementino da Silva; Alverne Passos Barbosa; Marina Carmello Cunha; Aysha Jussara Ivonilde Carrim; Danielle Guimarães A. Diniz; Derblai Casaroli; Roberto José de Freitas; Diogo Pedrosa Correa da Silva; Larissa Matuda Macedo; Eric de Souza Gil; Carolina Chaves Soares; Jacson Rodrigues Barbosa; Mércia Pandolfo Provin; Rodrigo Mello Gomes; Camila Alves de Melo; Diego Basile Colugnati; Daniel Alves Rosa; Claudio Andre Barbosa de Lira; Carlos Henrique Xavier; Carlos Henrique de Castro; Manoel Francisco Biancardi; Gustavo Rodrigues Pedrino; Aline Priscila Pansani; Nádia do Lago Costa; Francine do Couto Lima Moreira.",
+        "time": "22:08:06"
+    },
+    {
+        "sender": "user",
+        "text": "Quais são as formas de pagamento?",
+        "time": "22:08:47"
+    },
+    {
+        "sender": "bot",
+        "text": "As formas de pagamento são boleto bancário e Pix.",
+        "time": "22:08:47"
+    },
+    {
+        "sender": "user",
+        "text": "Quais são as especializações?",
+        "time": "22:09:08"
+    },
+    {
+        "sender": "bot",
+        "text": "As especializações oferecidas são: Construção Civil; Controladoria e Finanças; Direito Constitucional e Teoria da Constituição; Direito e Processo do Trabalho para Advogados; Direito e Processo Eleitoral; Enfermagem Dermatológica com Ênfase na Assistência a Pessoas com Feridas; Enfermagem em Unidade de Terapia Intensiva em Neonatologia; Enfrentamento à Violência Contra Mulheres e Meninas; Ensino de Línguas Adicionais, de Acolhimento e de Herança; Estudos Literários e Ensino de Literatura; Farmácia Oncológica; Finanças e Gestão Estratégica de Negócios; Fisiologia Humana Aplicada às Ciências da Saúde; Gestão e Qualidade Ambiental; Gestão Pública; Letramento Informacional: Educação para Informação; Linguística Aplicada: Ensino-Aprendizagem de Línguas Adicionais; Moda e Inovação; Odontologia Hospitalar; Perícia, Auditoria e Licenciamento Ambiental; Políticas Públicas; Práticas Pedagógicas na Educação Básica; Psicologia dos Processos Educativos; Vigilância Epidemiológica; Vitivinicultura, Serviços e Produtos.  Além disso, há MBAs em Marketing Estratégico e Planejamento Tributário e Compliance Fiscal, e Residência em Tecnologia da Informação.",
+        "time": "22:09:08"
+    },
+    {
+        "sender": "user",
+        "text": "Quem descobriu o Brasil?",
+        "time": "22:10:14"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas essa pergunta não se relaciona com a Escola de Pós-Graduação da UFG ou com a UFG.  Não tenho informações sobre esse assunto.",
+        "time": "22:10:14"
+    },
+    {
+        "sender": "user",
+        "text": "dasdoasdas",
+        "time": "22:10:27"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas sua pergunta não faz sentido. Por favor, reformule sua pergunta.",
+        "time": "22:10:27"
+    }
+]

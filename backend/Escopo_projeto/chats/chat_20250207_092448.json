@@ -1,0 +1,122 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "09:24:49"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você hoje em relação à Escola de Pós-Graduação da UFG ou à UFG?",
+        "time": "09:24:49"
+    },
+    {
+        "sender": "user",
+        "text": "Olá",
+        "time": "09:25:39"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá!  Como posso ajudá-lo(a) com relação à Escola de Pós-Graduação da UFG ou à UFG?",
+        "time": "09:25:39"
+    },
+    {
+        "sender": "user",
+        "text": "Olá, tudo bem?",
+        "time": "09:25:51"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Tudo bem, e você? Como posso ajudá-lo(a) com relação à Escola de Pós-Graduação da UFG ou à UFG?",
+        "time": "09:25:51"
+    },
+    {
+        "sender": "user",
+        "text": "O que eu poderia fazer?",
+        "time": "09:28:06"
+    },
+    {
+        "sender": "bot",
+        "text": "Para poder te ajudar a determinar o que você poderia fazer, preciso de mais informações.  Você tem alguma dúvida específica sobre a Escola de Pós-Graduação da UFG ou a UFG em geral?  Por exemplo, sobre matrículas, cursos disponíveis, documentação necessária, etc.?",
+        "time": "09:28:06"
+    },
+    {
+        "sender": "user",
+        "text": "Quais cursos eu poderia fazer?",
+        "time": "09:28:21"
+    },
+    {
+        "sender": "bot",
+        "text": "A Escola de Pós-Graduação da UFG oferece 120 cursos, entre especializações, MBAs e capacitações.  Para saber quais cursos específicos estão disponíveis, sugiro que acesse a página de cada curso ou entre em contato diretamente com a Escola de Pós UFG pelo telefone e Whatsapp: 62 3521-1076 ou pelo e-mail: escoladepos@ufg.br.",
+        "time": "09:28:21"
+    },
+    {
+        "sender": "user",
+        "text": "Quais são os cursos na área de exatas?",
+        "time": "09:32:07"
+    },
+    {
+        "sender": "bot",
+        "text": "O contexto fornecido lista os cursos disponíveis, mas não os categoriza por área de conhecimento.  Portanto, não posso responder sua pergunta com base nas informações disponíveis.  Recomendo acessar o site da Escola de Pós-Graduação da UFG para obter essa informação.",
+        "time": "09:32:07"
+    },
+    {
+        "sender": "user",
+        "text": "Quais são os cursos na área de saúde?",
+        "time": "09:32:46"
+    },
+    {
+        "sender": "bot",
+        "text": "O texto fornecido menciona residências médicas e multiprofissionais como cursos oferecidos pela Escola de Pós-Graduação da UFG, mas não lista os cursos específicos na área da saúde.  Para obter essa informação, consulte o site da Escola de Pós-Graduação da UFG ou entre em contato diretamente com eles.",
+        "time": "09:32:46"
+    },
+    {
+        "sender": "user",
+        "text": "O que tem na área de tecnologia?",
+        "time": "09:33:27"
+    },
+    {
+        "sender": "bot",
+        "text": "O texto menciona apenas uma \"RESIDÊNCIA EM Tecnologia da Informação\".  Para saber mais sobre outras possíveis opções na área de tecnologia, recomendo consultar o site da Escola de Pós-Graduação da UFG.",
+        "time": "09:33:27"
+    },
+    {
+        "sender": "user",
+        "text": "Fale mais sobre o curso de controladoria e finanças",
+        "time": "09:35:46"
+    },
+    {
+        "sender": "bot",
+        "text": "O curso de Controladoria e Finanças destina-se a profissionais de gestão, controladoria, finanças, custos e administração de empresas, além de docentes de instituições de ensino.  Ele visa capacitar profissionais em técnicas de gestão empresarial, com foco no papel da controladoria na adaptação das organizações.  O curso tem aulas quinzenais (sextas à noite e sábados), é híbrido, possui 360h, é reconhecido pelo MEC e custa R$549,99 de matrícula e mensalidade.  Mais informações podem ser encontradas em: https://escoladepos.ufg.br/cursos/mba-em-controladoria-e-financas/",
+        "time": "09:35:46"
+    },
+    {
+        "sender": "user",
+        "text": "Qual seria o publico alvo desse curso?",
+        "time": "09:37:18"
+    },
+    {
+        "sender": "bot",
+        "text": "O público-alvo do curso de Controladoria e Finanças são profissionais que atuam na área de gestão, controladoria, finanças, custos e administração de empresas, além de profissionais da docência superior em instituições públicas e privadas.",
+        "time": "09:37:18"
+    },
+    {
+        "sender": "user",
+        "text": "Tem pre requisito",
+        "time": "09:37:41"
+    },
+    {
+        "sender": "bot",
+        "text": "O texto não especifica pré-requisitos para o curso de Controladoria e Finanças.  Para confirmar a ausência ou verificar a existência de pré-requisitos, consulte o site da Escola de Pós-Graduação da UFG ou entre em contato diretamente com eles.",
+        "time": "09:37:41"
+    },
+    {
+        "sender": "user",
+        "text": "Qual foi minha primeira pergutna?",
+        "time": "09:38:54"
+    },
+    {
+        "sender": "bot",
+        "text": "Sua primeira pergunta foi \"Quais cursos eu poderia fazer?\".",
+        "time": "09:38:54"
+    }
+]
