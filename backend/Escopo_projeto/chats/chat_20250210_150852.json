@@ -1,0 +1,32 @@
+[
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "15:08:56"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você em relação à Escola de Pós-Graduação da UFG ou à UFG?",
+        "time": "15:08:56"
+    },
+    {
+        "sender": "user",
+        "text": "fale sobre a escola de pos?",
+        "time": "15:09:19"
+    },
+    {
+        "sender": "bot",
+        "text": "A Escola de Pós-Graduação da UFG oferece diversos cursos de especialização, pós-graduação, MBAs e residências, nas áreas de:  Construção Civil, Controladoria e Finanças, Direito, Enfermagem,  Enfrentamento à Violência Contra Mulheres e Meninas, Ensino de Línguas, Estudos Literários, Farmácia, Finanças, Fisiologia Humana, Gestão Ambiental, Gestão Pública,  Letramento Informacional, Linguística Aplicada, Marketing, Moda, Odontologia, Perícia Ambiental, Planejamento Tributário, Políticas Públicas, Práticas Pedagógicas, Psicologia, Tecnologia da Informação, Vigilância Epidemiológica e Vitivinicultura.  Para mais informações, consulte o site ou entre em contato pelo telefone/Whatsapp (62) 3521-1076 ou e-mail escoladepos@ufg.br.",
+        "time": "15:09:19"
+    },
+    {
+        "sender": "user",
+        "text": "Quais especializações?",
+        "time": "15:09:38"
+    },
+    {
+        "sender": "bot",
+        "text": "A Escola de Pós-Graduação da UFG oferece especializações em Construção Civil, Direito e Processo do Trabalho para Advogados, Direito e Processo Eleitoral, Enfermagem Dermatológica, Enfermagem em UTI Neonatal, Ensino de Línguas Adicionais, Estudos Literários e Ensino de Literatura, Finanças e Gestão Estratégica de Negócios, Fisiologia Humana Aplicada às Ciências da Saúde, Gestão e Qualidade Ambiental, Gestão Pública, Letramento Informacional, Linguística Aplicada, Moda e Inovação, Odontologia Hospitalar, Perícia, Auditoria e Licenciamento Ambiental, Políticas Públicas, Práticas Pedagógicas na Educação Básica, Psicologia dos Processos Educativos, Vigilância Epidemiológica e Vitivinicultura.  Há também MBAs em Marketing Estratégico e Planejamento Tributário e Compliance Fiscal.",
+        "time": "15:09:38"
+    }
+]

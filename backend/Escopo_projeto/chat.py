@@ -129,23 +129,26 @@ chain = llm()
 CHAT_DIR = "chats"
 os.makedirs(CHAT_DIR, exist_ok=True)
 
-def save_chat_to_json(chat_id, new_messages):
-    """Acumula o histórico do chat em um arquivo JSON."""
+class Message(BaseModel):
+    query: str
+    chat_id: str  # Agora o chat_id será enviado pelo frontend
+
+def save_chat_to_json(chat_id, messages):
     filename = os.path.join(CHAT_DIR, f"chat_{chat_id}.json")
-    
-    # Verifica se o arquivo já existe para acumular as mensagens
+
+    # Se o arquivo já existe, carrega o conteúdo anterior
     if os.path.exists(filename):
         with open(filename, "r", encoding="utf-8") as f:
             existing_messages = json.load(f)
     else:
         existing_messages = []
 
-    # Adiciona as novas mensagens ao histórico existente
-    updated_messages = existing_messages + new_messages
+    # Adiciona as novas mensagens ao histórico
+    existing_messages.extend(messages)
 
-    # Salva o histórico atualizado no arquivo JSON
+    # Salva o histórico atualizado
     with open(filename, "w", encoding="utf-8") as f:
-        json.dump(updated_messages, f, indent=4, ensure_ascii=False)
+        json.dump(existing_messages, f, indent=4, ensure_ascii=False)
 
 
 
@@ -162,40 +165,49 @@ def get_current_chat_id():
 
 @app.get("/api/new_chat")
 async def new_chat():
-    """Inicia um novo chat e atualiza o chat_id"""
+    """Inicia um novo chat somente se não houver um chat_id existente."""
     try:
-        chat_id = datetime.now().strftime("%Y%m%d_%H%M%S")
-        
-        # Atualiza o chat_id globalmente
-        session_id = "abc123"  # Esse identificador pode vir do usuário
-        chat_sessions[session_id] = chat_id
+        session_id = "abc123"  # Este identificador pode vir do frontend se quiser associar a diferentes usuários
 
-        return {"message": "Novo chat iniciado", "chat_id": chat_id}
+        # Verifica se já existe um chat_id na sessão
+        if session_id in chat_sessions:
+            chat_id = chat_sessions[session_id]
+        else:
+            chat_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+            chat_sessions[session_id] = chat_id
+
+        return {"message": "Chat iniciado", "chat_id": chat_id}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-
 @app.post("/api/chat")
-async def chat(message: Message, chat_id: str = Depends(get_current_chat_id)):
-    try: 
+async def chat(message: Message):
+    try:
+        if message.chat_id not in chat_sessions.values():
+            return {"reply": "Sessão expirada. Por favor, inicie um novo chat."}
+        
         response = chain.invoke(
             {"input": message.query},
-            config={"configurable": {"session_id": chat_id}}  # Usa o chat_id correto
+            config={"configurable": {"session_id": message.chat_id}}
         )
 
-        # Verifica se a resposta tem a chave correta
         answer_text = response.get("answer", "Desculpe, não consegui gerar uma resposta.")
-
-        # Criar estrutura do histórico do chat
-        new_messages = [
-            {"sender": "user", "text": message.query, "time": datetime.now().strftime("%H:%M:%S")},
-            {"sender": "bot", "text": answer_text, "time": datetime.now().strftime("%H:%M:%S")},
-        ]
-
-        # Salvar no arquivo JSON acumulando mensagens
-        save_chat_to_json(chat_id, new_messages)
-
+        save_chat_to_json(message.chat_id, [{"sender": "user", "text": message.query}, {"sender": "bot", "text": answer_text}])
         return {"reply": answer_text}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
+    
+@app.post("/api/end_chat")
+async def end_chat(data: Message):
+    try:
+        chat_id = data.chat_id
+        session_id = "abc123"  # Ajuste conforme necessário
+        
+        # Remove o chat_id da sessão ativa
+        if session_id in chat_sessions and chat_sessions[session_id] == chat_id:
+            del chat_sessions[session_id]
+        
+        return {"message": "Chat encerrado com sucesso"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import FloatingButton from './FloatingButton';
 import './ChatbotWindow.css';
@@ -9,6 +9,8 @@ const ChatbotWindow = () => {
     const [userMessage, setUserMessage] = useState('');
     const [typingMessage, setTypingMessage] = useState(''); // Estado para mensagem digitada
     const [isTyping, setIsTyping] = useState(false); // Controla se o bot está "digitando"
+    const inactivityTimerRef = useRef(null);  // Ref para o timer de inatividade
+    const warningSentRef = useRef(false);  // Para garantir que a mensagem de aviso só seja enviada uma vez
 
     const toggleChatbot = () => {
         setIsOpen(!isOpen);
@@ -17,44 +19,53 @@ const ChatbotWindow = () => {
     const startNewChat = async () => {
         try {
             const response = await axios.get("http://127.0.0.1:8000/api/new_chat");
-            console.log(response.data); // Veja o que a API retorna no console
+            const { chat_id } = response.data;
+            
+            // Armazena o chat_id no sessionStorage
+            sessionStorage.setItem('chat_id', chat_id);
+    
+            console.log(response.data);
         } catch (error) {
             console.error("Erro ao iniciar novo chat:", error);
         }
     };
     
     
+    
 
     const sendMessage = async () => {
         if (!userMessage.trim()) return;
-
-
-        // Limpa o campo de entrada imediatamente
-        const currentUserMessage = userMessage; // Salva a mensagem atual antes de limpar
+    
+        const currentUserMessage = userMessage;
         setUserMessage('');
-
+    
         const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-        // Adiciona mensagem do usuário
         setMessages([...messages, { sender: 'user', text: currentUserMessage, time: currentTime }]);
 
+        resetInactivityTimer();  // Reinicia o timer de inatividade após envio de mensagem
+    
         try {
-            // Faz a requisição para a API
+            let chat_id = sessionStorage.getItem('chat_id');
+    
+            // Se não houver chat_id, inicia um novo chat
+            if (!chat_id) {
+                await startNewChat();
+                chat_id = sessionStorage.getItem('chat_id');
+            }
+    
             const response = await axios.post('http://127.0.0.1:8000/api/chat', {
-            query: userMessage,
-        });
-
+                query: currentUserMessage,
+                chat_id: chat_id,  // Envia o chat_id para o backend
+            });
+    
             const botReply = response.data.reply || 'Resposta padrão do bot';
-
-            // Adiciona animação de digitação
             simulateTyping(botReply);
         } catch (error) {
             console.error('Erro ao chamar a API:', error);
-
             simulateTyping('Erro ao obter resposta. Tente novamente.');
         }
-
     };
+    
 
     // Função para simular a digitação do bot
     const simulateTyping = (text) => {
@@ -88,6 +99,63 @@ const ChatbotWindow = () => {
             sendMessage();
         }
     };
+
+    const resetInactivityTimer = () => {
+        clearTimeout(inactivityTimerRef.current);
+        warningSentRef.current = false;
+
+        inactivityTimerRef.current = setTimeout(() => {
+            if (!warningSentRef.current) {
+                sendBotMessage("Você ainda está aí?");
+                warningSentRef.current = true;
+                
+                // Inicia o temporizador para encerrar o chat após 5 minutos adicionais (10 minutos no total)
+                inactivityTimerRef.current = setTimeout(() => {
+                    sendBotMessage("O chat foi encerrado devido à inatividade. Inicie uma nova conversa quando quiser!");
+                    endChat();
+                }, 5 * 60 * 1000);  // 5 minutos adicionais
+            }
+        }, 5 * 60 * 1000);  // Primeiro aviso após 5 minutos
+    };
+
+    const endChat = () => {
+        const chatId = sessionStorage.getItem('chat_id');
+        console.log('Encerrando chat com chat_id:', chatId);  // Verifique se o chat_id está correto
+    
+        if (!chatId) {
+            console.error('chat_id não encontrado. O chat já pode estar encerrado.');
+            return;
+        }
+    
+        sessionStorage.removeItem('chat_id');
+        
+    
+        axios.post('http://127.0.0.1:8000/api/end_chat', {
+            query: "encerrar_chat",  // Indicando que a ação é para encerrar o chat
+            chat_id: chatId
+        })
+        .then(response => {
+            console.log('Chat encerrado com sucesso:', response.data);
+        })
+        .catch(error => {
+            console.error('Erro ao encerrar o chat:', error);
+        });
+        
+    };
+    
+
+    const sendBotMessage = (text) => {
+        const botTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        setMessages((prev) => [...prev, { sender: 'bot', text, time: botTime }]);
+    };
+
+    useEffect(() => {
+        if (isOpen) {
+            resetInactivityTimer();  // Inicia o timer quando o chat é aberto
+        } else {
+            clearTimeout(inactivityTimerRef.current);  // Limpa o timer se o chat for fechado
+        }
+    }, [isOpen]);
 
     return (
         <>

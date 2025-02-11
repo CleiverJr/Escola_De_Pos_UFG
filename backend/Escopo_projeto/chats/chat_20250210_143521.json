@@ -1,0 +1,22 @@
+[
+    {
+        "sender": "user",
+        "text": "fdsfsd",
+        "time": "14:35:26"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas não entendi sua pergunta. Por favor, reformule-a.",
+        "time": "14:35:26"
+    },
+    {
+        "sender": "user",
+        "text": "fdsf",
+        "time": "14:35:30"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas não entendi sua pergunta. Por favor, reformule-a.",
+        "time": "14:35:30"
+    }
+]

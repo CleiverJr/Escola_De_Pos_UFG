@@ -1,0 +1,42 @@
+[
+    {
+        "sender": "user",
+        "text": "teste",
+        "time": "15:24:37"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa entender melhor o que você precisa.",
+        "time": "15:24:37"
+    },
+    {
+        "sender": "user",
+        "text": "a",
+        "time": "15:24:42"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, faça uma pergunta completa para que eu possa ajudá-lo.",
+        "time": "15:24:42"
+    },
+    {
+        "sender": "user",
+        "text": "a",
+        "time": "15:24:52"
+    },
+    {
+        "sender": "bot",
+        "text": "Sua pergunta é muito vaga. Por favor, reformule sua pergunta para que eu possa ajudá-lo.",
+        "time": "15:24:52"
+    },
+    {
+        "sender": "user",
+        "text": "a",
+        "time": "15:25:02"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, faça uma pergunta completa e clara para que eu possa ajudá-lo.  A letra \"a\" não me fornece informações suficientes.",
+        "time": "15:25:02"
+    }
+]

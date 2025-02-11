@@ -26,8 +26,8 @@
 }
 
 .chatbot-messages {
-    padding: 10px;
-    height: 380px;
+    padding: 1rem;
+    height: 367px;
     overflow-y: auto;
     background-color: #f9f9f9;
 }

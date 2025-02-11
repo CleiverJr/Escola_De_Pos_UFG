@@ -1,0 +1,22 @@
+[
+    {
+        "sender": "user",
+        "text": "teste",
+        "time": "15:09:58"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa entender melhor o que você precisa.",
+        "time": "15:09:58"
+    },
+    {
+        "sender": "user",
+        "text": "teste",
+        "time": "15:12:55"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa ajudá-lo.  Ela não está clara o suficiente para eu entender o que você precisa saber sobre a Escola de Pós-Graduação da UFG ou a UFG.",
+        "time": "15:12:55"
+    }
+]

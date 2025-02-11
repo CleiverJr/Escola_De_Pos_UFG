@@ -1,0 +1,32 @@
+[
+    {
+        "sender": "user",
+        "text": "teste",
+        "time": "15:12:59"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa entendê-la melhor.",
+        "time": "15:12:59"
+    },
+    {
+        "sender": "user",
+        "text": "oi",
+        "time": "15:13:05"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você hoje?",
+        "time": "15:13:05"
+    },
+    {
+        "sender": "user",
+        "text": "teste",
+        "time": "15:13:30"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa ajudá-lo.  Preciso de mais informações para entender o que você deseja saber.",
+        "time": "15:13:30"
+    }
+]

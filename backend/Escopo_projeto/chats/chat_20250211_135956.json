@@ -1,0 +1,74 @@
+[
+    {
+        "sender": "user",
+        "text": "oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você em relação à Escola de Pós-Graduação da UFG ou à UFG?"
+    },
+    {
+        "sender": "user",
+        "text": "Teste"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa entender melhor o que você precisa."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, faça uma pergunta sobre a Escola de Pós-Graduação da UFG ou a UFG.  Sua pergunta atual é muito vaga para eu poder te ajudar."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa ajudá-lo.  A letra \"a\" não me fornece informações suficientes."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "A letra \"a\" não me permite entender sua pergunta. Por favor, reformule sua pergunta de forma mais clara e completa para que eu possa te ajudar."
+    },
+    {
+        "sender": "user",
+        "text": "1"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, faça uma pergunta. O número \"1\" não me fornece informações suficientes para te ajudar."
+    },
+    {
+        "sender": "user",
+        "text": "2"
+    },
+    {
+        "sender": "bot",
+        "text": "O número \"2\" não me permite entender sua pergunta. Por favor, faça uma pergunta sobre a Escola de Pós-Graduação da UFG ou a UFG."
+    },
+    {
+        "sender": "user",
+        "text": "1"
+    },
+    {
+        "sender": "bot",
+        "text": "O número \"1\" não constitui uma pergunta.  Por favor, formule uma pergunta sobre a Escola de Pós-Graduação da UFG ou a UFG para que eu possa te auxiliar."
+    },
+    {
+        "sender": "user",
+        "text": "1"
+    },
+    {
+        "sender": "bot",
+        "text": "O número 1 não é uma pergunta.  Por favor, formule sua pergunta sobre a Escola de Pós-Graduação da UFG ou a UFG."
+    }
+]

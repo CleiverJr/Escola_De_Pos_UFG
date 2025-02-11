@@ -1,0 +1,10 @@
+[
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa entendê-la e ajudá-lo."
+    }
+]
