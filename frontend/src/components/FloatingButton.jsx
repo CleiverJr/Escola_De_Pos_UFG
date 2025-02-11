@@ -12,7 +12,7 @@ const FloatingButton = ({ onClick, startNewChat }) => {
         // Se não houver chat_id, inicia um novo chat
         if (!chat_id) {
             try {
-                const response = await axios.get("http://127.0.0.1:8000/api/new_chat");
+                const response = await axios.get("https://escola-de-pos-ufg-backend.onrender.com/api/new_chat");
                 chat_id = response.data.chat_id;
                 localStorage.setItem('chat_id', chat_id);  // Salva o novo chat_id
             } catch (error) {

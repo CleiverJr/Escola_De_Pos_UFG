@@ -18,7 +18,7 @@ const ChatbotWindow = () => {
 
     const startNewChat = async () => {
         try {
-            const response = await axios.get("http://127.0.0.1:8000/api/new_chat");
+            const response = await axios.get("https://escola-de-pos-ufg-backend.onrender.com/api/new_chat");
             const { chat_id } = response.data;
             
             // Armazena o chat_id no sessionStorage
@@ -53,7 +53,7 @@ const ChatbotWindow = () => {
                 chat_id = sessionStorage.getItem('chat_id');
             }
     
-            const response = await axios.post('http://127.0.0.1:8000/api/chat', {
+            const response = await axios.post('https://escola-de-pos-ufg-backend.onrender.com/api/chat', {
                 query: currentUserMessage,
                 chat_id: chat_id,  // Envia o chat_id para o backend
             });
@@ -130,7 +130,7 @@ const ChatbotWindow = () => {
         sessionStorage.removeItem('chat_id');
         
     
-        axios.post('http://127.0.0.1:8000/api/end_chat', {
+        axios.post('https://escola-de-pos-ufg-backend.onrender.com/api/end_chat', {
             query: "encerrar_chat",  // Indicando que a ação é para encerrar o chat
             chat_id: chatId
         })

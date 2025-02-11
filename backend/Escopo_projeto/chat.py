@@ -211,3 +211,7 @@ async def end_chat(data: Message):
         return {"message": "Chat encerrado com sucesso"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
