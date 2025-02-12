@@ -19,7 +19,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 def retriever():
         #importando o banco de dados
-        loader = CSVLoader(file_path='atualizado_concatenated_perguntas_respostas_combined.csv', source_column="PERGUNTAS", encoding="ISO-8859-1")
+        loader = CSVLoader(file_path='informacoe_escola_pos.csv', source_column="PERGUNTAS", encoding="ISO-8859-1")
         # Armazenar os dados do loader na variável data
         data = loader.load()
 
