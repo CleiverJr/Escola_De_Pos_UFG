@@ -7,7 +7,7 @@
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-simple-chatbot": "^0.6.1",
     "styled-components": "^4.4.1",
     "web-vitals": "^4.2.4"
@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "chmod +x node_modules/.bin/react-scripts"
   },
   "eslintConfig": {
     "extends": [
@@ -37,6 +38,6 @@
     ]
   },
   "engines": {
-  "node": "18.x"
-}
+    "node": "18.x"
+  }
 }
