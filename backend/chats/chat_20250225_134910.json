@@ -1,0 +1,18 @@
+[
+    {
+        "sender": "user",
+        "text": "oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você com informações sobre a Escola de Pós-Graduação da UFG ou a UFG?"
+    },
+    {
+        "sender": "user",
+        "text": "Quais são as formas de pagamento?"
+    },
+    {
+        "sender": "bot",
+        "text": "As formas de pagamento para os cursos da Escola de Pós-Graduação da UFG são boleto bancário e Pix."
+    }
+]

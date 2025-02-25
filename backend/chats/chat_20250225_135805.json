@@ -1,0 +1,18 @@
+[
+    {
+        "sender": "user",
+        "text": "teste"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa entender melhor o que você precisa."
+    },
+    {
+        "sender": "user",
+        "text": "oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você hoje?"
+    }
+]
