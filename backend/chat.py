@@ -28,7 +28,7 @@ def llm():
         api_key = GEMINI_API_KEY,
         model="gemini-1.5-flash",
         temperature=0.4,
-        max_tokens=None,
+        max_tokens=300,
         timeout=None,
         max_retries=2,
     )
