@@ -1,0 +1,74 @@
+[
+    {
+        "sender": "user",
+        "text": "oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você em relação à Escola de Pós-Graduação da UFG ou à UFG?"
+    },
+    {
+        "sender": "user",
+        "text": "ter"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, não entendi sua pergunta.  Por favor, reformule sua pergunta para que eu possa te ajudar."
+    },
+    {
+        "sender": "user",
+        "text": "teste"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, \"teste\" não é uma pergunta.  Por favor, formule uma pergunta sobre a Escola de Pós-Graduação da UFG ou a UFG para que eu possa te ajudar."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, não entendi sua pergunta. Por favor, reformule sua pergunta para que eu possa te ajudar."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas \"a\" não é uma pergunta.  Por favor, faça uma pergunta sobre a Escola de Pós-Graduação da UFG ou a UFG para que eu possa ajudá-lo."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, \"a\" não é uma pergunta.  Por favor, formule uma pergunta completa para que eu possa te ajudar."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas \"a\" não é uma pergunta.  Por favor, faça uma pergunta sobre a Escola de Pós-Graduação da UFG ou a UFG."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas \"a\" não é uma pergunta. Por favor, faça uma pergunta completa e clara para que eu possa ajudá-lo."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas \"a\" não é uma pergunta.  Por favor, formule uma pergunta sobre a Escola de Pós-Graduação da UFG ou a UFG."
+    }
+]

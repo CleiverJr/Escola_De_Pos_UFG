@@ -1,0 +1,18 @@
+[
+    {
+        "sender": "user",
+        "text": "testte"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa entender melhor o que você precisa."
+    },
+    {
+        "sender": "user",
+        "text": "Quem descobriu o brasil?"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas essa pergunta não está relacionada à Escola de Pós-Graduação da UFG ou à UFG.  Não posso responder a ela."
+    }
+]

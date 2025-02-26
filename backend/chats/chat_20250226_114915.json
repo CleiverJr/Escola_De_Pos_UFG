@@ -1,0 +1,50 @@
+[
+    {
+        "sender": "user",
+        "text": "teste"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa entender melhor o que você precisa."
+    },
+    {
+        "sender": "user",
+        "text": "teste"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta para que eu possa ajudá-lo.  Preciso de mais informações para entender o que você deseja saber."
+    },
+    {
+        "sender": "user",
+        "text": "teste"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, reformule sua pergunta.  A palavra \"teste\" não me fornece informações suficientes para lhe dar uma resposta útil."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "A letra \"a\" não me permite entender sua pergunta. Por favor, reformule sua pergunta para que eu possa ajudá-lo."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "A letra \"a\" sozinha não constitui uma pergunta.  Por favor, formule sua pergunta de forma completa para que eu possa lhe ajudar."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "\"A\" não é uma pergunta que eu possa responder. Por favor, faça uma pergunta completa relacionada à Escola de Pós-Graduação da UFG ou à UFG."
+    }
+]
