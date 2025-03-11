@@ -23,10 +23,6 @@ async def chat(message: Message):
             {"input": message.query},
             config={"configurable": {"session_id": message.chat_id}}
         )
-        
-        print("DEBUG - Response completo:", response)  # Imprime tudo para análise
-
-        metadata = response.get("response_metadata", "Metadata não disponível")
 
         answer_text = response.get("answer", "Desculpe, não consegui gerar uma resposta.")
         save_chat_to_json(message.chat_id, [{"sender": "user", "text": message.query}, {"sender": "bot", "text": answer_text}])

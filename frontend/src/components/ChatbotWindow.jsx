@@ -100,6 +100,19 @@ const ChatbotWindow = () => {
         }
     };
 
+    const formatMessageWithLinks = (text) => {
+        const urlRegex = /(https?:\/\/[^\s]+)/g;
+        return text.split(urlRegex).map((part, index) => 
+            urlRegex.test(part) ? (
+                <a key={index} href={part} target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>
+                    {part}
+                </a>
+            ) : (
+                part
+            )
+        );
+    };
+
     const resetInactivityTimer = () => {
         clearTimeout(inactivityTimerRef.current);
         warningSentRef.current = false;
@@ -165,23 +178,11 @@ const ChatbotWindow = () => {
                 <div className="chatbot-header">Chatbot</div>
                 <div className="chatbot-messages">
                     {messages.map((message, index) => (
-                        <div
-                            key={index}
-                            style={{
-                                textAlign: message.sender === 'user' ? 'right' : 'left',
-                                marginBottom: '10px',
-                            }}
-                        >
+                        <div key={index} style={{ textAlign: message.sender === 'user' ? 'right' : 'left', marginBottom: '10px' }}>
                             <div>
-                                <strong>{message.sender === 'user' ? 'Você' : 'Bot'}:</strong> {message.text}
+                                <strong>{message.sender === 'user' ? 'Você' : 'Bot'}:</strong> {message.sender === 'bot' ? formatMessageWithLinks(message.text) : message.text}
                             </div>
-                            <div
-                                style={{
-                                    fontSize: '0.8em',
-                                    color: 'gray',
-                                    marginTop: '5px',
-                                }}
-                            >
+                            <div style={{ fontSize: '0.8em', color: 'gray', marginTop: '5px' }}>
                                 {message.time}
                             </div>
                         </div>
