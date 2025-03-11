@@ -4,6 +4,7 @@ from pydantic import BaseModel
 # Importando dependências necessárias
 from chat import chain
 from utils.chat_utils import chat_sessions, save_chat_to_json
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 router = APIRouter()
 
@@ -22,9 +23,14 @@ async def chat(message: Message):
             {"input": message.query},
             config={"configurable": {"session_id": message.chat_id}}
         )
+        
+        print("DEBUG - Response completo:", response)  # Imprime tudo para análise
+
+        metadata = response.get("response_metadata", "Metadata não disponível")
 
         answer_text = response.get("answer", "Desculpe, não consegui gerar uma resposta.")
         save_chat_to_json(message.chat_id, [{"sender": "user", "text": message.query}, {"sender": "bot", "text": answer_text}])
         return {"reply": answer_text}
+    
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

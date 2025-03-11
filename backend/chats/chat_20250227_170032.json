@@ -1,0 +1,66 @@
+[
+    {
+        "sender": "user",
+        "text": "Oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você em relação à Escola de Pós-Graduação da UFG ou à UFG?"
+    },
+    {
+        "sender": "user",
+        "text": "Qual seu nome?"
+    },
+    {
+        "sender": "bot",
+        "text": "Eu não tenho nome. Sou um assistente virtual."
+    },
+    {
+        "sender": "user",
+        "text": "Me fale quem decobriu o brasil"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas essa pergunta não está relacionada à Escola de Pós-Graduação da UFG ou à UFG.  Não tenho informações sobre esse assunto."
+    },
+    {
+        "sender": "user",
+        "text": "O que você faz?"
+    },
+    {
+        "sender": "bot",
+        "text": "Sou um assistente virtual especializado em responder perguntas sobre a Escola de Pós-Graduação da UFG e a UFG, com base nas informações que me foram fornecidas."
+    },
+    {
+        "sender": "user",
+        "text": "Vocês oferecem o curso de vitivinicultura"
+    },
+    {
+        "sender": "bot",
+        "text": "Sim, a Escola de Pós-Graduação da UFG oferece uma especialização em Vitivinicultura, Serviços e Produtos.  Mais informações podem ser encontradas em: https://escoladepos.ufg.br/cursos/vitivinicultura-produtos-e-servicos-vitivini/"
+    },
+    {
+        "sender": "user",
+        "text": "Quais os cursos você oferece?"
+    },
+    {
+        "sender": "bot",
+        "text": "A Escola de Pós-Graduação da UFG oferece mais de 120 cursos, entre especializações, MBAs e capacitações.  Alguns exemplos incluem especializações em Construção Civil, Direito Constitucional, Enfermagem, Gestão Pública,  e MBA em Marketing Estratégico.  Para uma lista completa, sugiro consultar o site da Escola de Pós-Graduação da UFG."
+    },
+    {
+        "sender": "user",
+        "text": "Quais são os professores?"
+    },
+    {
+        "sender": "bot",
+        "text": "O contexto fornecido não lista os nomes dos professores. Para obter essa informação, sugiro consultar o site da Escola de Pós-Graduação da UFG ou entrar em contato diretamente com a instituição através do telefone ou e-mail fornecidos."
+    },
+    {
+        "sender": "user",
+        "text": "tchau"
+    },
+    {
+        "sender": "bot",
+        "text": "Tchau! Até mais."
+    }
+]

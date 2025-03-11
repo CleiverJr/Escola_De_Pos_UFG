@@ -1,0 +1,10 @@
+[
+    {
+        "sender": "user",
+        "text": "oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso te ajudar hoje?"
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "sender": "user",
+        "text": "Olá"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso te ajudar hoje?"
+    },
+    {
+        "sender": "user",
+        "text": "Qual seu nome?"
+    },
+    {
+        "sender": "bot",
+        "text": "Meu nome é Ana."
+    },
+    {
+        "sender": "user",
+        "text": "O que é UFG?"
+    },
+    {
+        "sender": "bot",
+        "text": "Com base no contexto fornecido, UFG significa Universidade Federal de Goiás."
+    },
+    {
+        "sender": "user",
+        "text": "O que vc faz?"
+    },
+    {
+        "sender": "bot",
+        "text": "Sou Ana, a assistente virtual da Escola de Pós-Graduação da Universidade Federal.  Respondo perguntas sobre a pós-graduação da instituição, com base nas informações que me são fornecidas."
+    },
+    {
+        "sender": "user",
+        "text": "Quais cursos a escola de pós oferece?"
+    },
+    {
+        "sender": "bot",
+        "text": "A Escola de Pós-Graduação oferece diversos cursos, incluindo especializações, MBAs e residências médicas e multiprofissionais.  Há mais de 120 cursos no total. Para te ajudar melhor, você poderia me dizer em qual área de conhecimento você está interessado?  Por exemplo,  Exatas, Humanas, Saúde,  etc.?  Ou, caso queira uma lista completa, recomendo entrar em contato com a secretaria pelo telefone 62 3521-1076 ou e-mail escoladepos@ufg.br."
+    },
+    {
+        "sender": "user",
+        "text": "Queria saber, na área de exatas"
+    },
+    {
+        "sender": "bot",
+        "text": "Infelizmente, o contexto fornecido não lista os cursos de pós-graduação por área de conhecimento.  Para saber quais cursos de exatas são oferecidos, recomendo entrar em contato com a secretaria da Escola de Pós-Graduação pelo telefone 62 3521-1076 ou e-mail escoladepos@ufg.br."
+    },
+    {
+        "sender": "user",
+        "text": "Queria saber na área de ciências exatas"
+    },
+    {
+        "sender": "bot",
+        "text": "Sinto muito, mas a lista de cursos fornecida não especifica a área de conhecimento de cada um, e não consigo identificar quais cursos pertencem à área de Ciências Exatas. Recomendo entrar em contato com a secretaria da Escola de Pós-Graduação pelo telefone 62 3521-1076 ou e-mail escoladepos@ufg.br para obter essa informação."
+    },
+    {
+        "sender": "user",
+        "text": "E cusos de ciências da natureza?"
+    },
+    {
+        "sender": "bot",
+        "text": "Desculpe, mas o contexto fornecido não lista os cursos de pós-graduação por área de conhecimento, então não consigo identificar quais cursos são de Ciências da Natureza. Recomendo entrar em contato com a secretaria da Escola de Pós-Graduação pelo telefone 62 3521-1076 ou e-mail escoladepos@ufg.br para obter essa informação."
+    },
+    {
+        "sender": "user",
+        "text": "Fale sobre a pós graduação em direito agrário"
+    },
+    {
+        "sender": "bot",
+        "text": "A pós-graduação em Direito Agrário é um curso presencial de especialização, pertencente à área de Ciências Sociais Aplicadas.  Ele é voltado para Agentes do Conselho Indigenista Missionário, com o objetivo de conferir o título de especialista em Direito Agrário.  O curso tem carga horária de 380 horas e é reconhecido pelo MEC.  Para mais informações, entre em contato pelo telefone (62) 3209-6021 ou e-mail marcus_teles@ufg.br.  A data de início das aulas ainda está sendo definida."
+    },
+    {
+        "sender": "user",
+        "text": "Quais outros cursos de Cieências sociais aplicadas, vcs oferecem?"
+    },
+    {
+        "sender": "bot",
+        "text": "O contexto fornecido menciona apenas o curso de Direito Agrário como pertencente à área de Ciências Sociais Aplicadas.  Para saber quais outros cursos são oferecidos nessa área, recomendo entrar em contato com a secretaria da Escola de Pós-Graduação pelo telefone (62) 3521-1076 ou e-mail escoladepos@ufg.br."
+    }
+]
