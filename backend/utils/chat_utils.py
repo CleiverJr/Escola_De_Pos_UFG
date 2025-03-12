@@ -38,3 +38,4 @@ def get_current_chat_id():
     if session_id not in chat_sessions:
         chat_sessions[session_id] = datetime.now().strftime("%Y%m%d_%H%M%S")
     return chat_sessions[session_id]
+    

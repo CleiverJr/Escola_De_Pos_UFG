@@ -10,27 +10,35 @@ const ChatbotWindow = () => {
     const [typingMessage, setTypingMessage] = useState(''); // Estado para mensagem digitada
     const [isTyping, setIsTyping] = useState(false); // Controla se o bot está "digitando"
     const inactivityTimerRef = useRef(null);  // Ref para o timer de inatividade
+    const messagesEndRef = useRef(null); // Ref para rolar até o final automaticamente
     const warningSentRef = useRef(false);  // Para garantir que a mensagem de aviso só seja enviada uma vez
 
-    const toggleChatbot = () => {
-        setIsOpen(!isOpen);
+    const toggleChatbot = async () => {
+        setIsOpen((prev) => !prev);
+
+        if (!isOpen) {
+            await startNewChat(); // Inicia o chat ao abrir
+        }
     };
 
     const startNewChat = async () => {
         try {
-            const response = await axios.get("http://127.0.0.1:8000/api/new_chat");
-            const { chat_id } = response.data;
-            
-            // Armazena o chat_id no sessionStorage
-            sessionStorage.setItem('chat_id', chat_id);
-    
-            console.log(response.data);
+            let chat_id = sessionStorage.getItem('chat_id');
+
+            if (!chat_id) {
+                const response = await axios.get("http://127.0.0.1:8000/api/new_chat");
+                chat_id = response.data.chat_id;
+                sessionStorage.setItem('chat_id', chat_id);
+
+                // Se houver uma mensagem de boas-vindas do backend, usa simulateTyping
+                if (response.data.bot_reply) {
+                    simulateTyping(response.data.bot_reply.text);
+                }
+            }
         } catch (error) {
             console.error("Erro ao iniciar novo chat:", error);
         }
     };
-    
-    
     
 
     const sendMessage = async () => {
@@ -68,30 +76,29 @@ const ChatbotWindow = () => {
     
 
     // Função para simular a digitação do bot
-    const simulateTyping = (text) => {
+        const simulateTyping = (text) => {
         setIsTyping(true);
-        setTypingMessage(''); // Reinicia o texto digitado
-        const words = text.split(' '); // Divide o texto em palavras
-        let index = -1;
+        setTypingMessage('');
+        const words = text.split(' ');
+        let index = 0;
 
-        const botTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); // Horário atual
+        const botTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
         const interval = setInterval(() => {
-            setTypingMessage((prev) => (prev + (prev ? ' ' : '') + words[index])); // Adiciona palavra por palavra
+            setTypingMessage((prev) => (prev + (prev ? ' ' : '') + words[index]));
             index++;
 
             if (index === words.length) {
                 clearInterval(interval);
                 setIsTyping(false);
 
-                // Quando a digitação termina, adiciona a mensagem final ao histórico com o horário
                 setMessages((prev) => [
                     ...prev,
                     { sender: 'bot', text: text, time: botTime },
                 ]);
-                setTypingMessage(''); // Limpa o texto temporário
+                setTypingMessage('');
             }
-        }, 100); // Velocidade da digitação (300ms por palavra)
+        }, 100);
     };
 
     const handleKeyPress = (event) => {
@@ -156,6 +163,16 @@ const ChatbotWindow = () => {
         
     };
     
+    // Função para rolar automaticamente até o final
+    const scrollToBottom = () => {
+        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+
+    // Efeito para rolar sempre que uma nova mensagem for adicionada
+    useEffect(() => {
+        scrollToBottom();
+    }, [messages, typingMessage]);
+
 
     const sendBotMessage = (text) => {
         const botTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -172,7 +189,7 @@ const ChatbotWindow = () => {
 
     return (
         <>
-            <FloatingButton onClick={toggleChatbot} startNewChat={startNewChat} />
+            <FloatingButton onClick={toggleChatbot} startNewChat={startNewChat} setMessages={setMessages} />
 
             <div className={`chatbot-container ${isOpen ? 'visible' : ''}`}>
                 <div className="chatbot-header">Chatbot</div>
@@ -180,7 +197,7 @@ const ChatbotWindow = () => {
                     {messages.map((message, index) => (
                         <div key={index} style={{ textAlign: message.sender === 'user' ? 'right' : 'left', marginBottom: '10px' }}>
                             <div>
-                                <strong>{message.sender === 'user' ? 'Você' : 'Bot'}:</strong> {message.sender === 'bot' ? formatMessageWithLinks(message.text) : message.text}
+                                <strong>{message.sender === 'user' ? 'Você' : 'Ana'}:</strong> {message.sender === 'bot' ? formatMessageWithLinks(message.text) : message.text}
                             </div>
                             <div style={{ fontSize: '0.8em', color: 'gray', marginTop: '5px' }}>
                                 {message.time}
@@ -191,8 +208,8 @@ const ChatbotWindow = () => {
                     {/* Exibe a mensagem temporária sendo digitada */}
                     {isTyping && (
                         <div style={{ textAlign: 'left', marginBottom: '10px' }}>
-                            <div>
-                                <strong>Bot:</strong> {typingMessage}
+                            <div> 
+                                <strong>Ana:</strong> {typingMessage}
                             </div>
                             <div
                                 style={{
@@ -205,6 +222,8 @@ const ChatbotWindow = () => {
                             </div>
                         </div>
                     )}
+
+                    <div ref={messagesEndRef} />
                 </div>
 
                 <div className="chatbot-input-container">

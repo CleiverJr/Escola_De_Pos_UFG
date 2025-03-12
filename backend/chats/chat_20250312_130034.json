@@ -1,0 +1,58 @@
+[
+    {
+        "sender": "user",
+        "text": "Quero a lista de todos"
+    },
+    {
+        "sender": "bot",
+        "text": "Não entendi sua pergunta. Poderia reformular para que eu possa ajudar melhor?"
+    },
+    {
+        "sender": "user",
+        "text": "Quero a lista de todos professores"
+    },
+    {
+        "sender": "bot",
+        "text": "A lista de professores é extensa. Para te ajudar melhor, você poderia especificar em qual área de conhecimento ou curso você está interessado?"
+    },
+    {
+        "sender": "user",
+        "text": "Quero a lista de todos professores, nao me importe dela ser grande"
+    },
+    {
+        "sender": "bot",
+        "text": "A lista completa de professores é extensa.  Para facilitar, recomendo que você entre em contato com a secretaria da Escola de Pós-Graduação pelo telefone 62 3521-1076 ou e-mail escoladepos@ufg.br. Eles poderão fornecer a lista completa ou direcioná-lo para a informação desejada."
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Não entendi sua pergunta. Poderia reformular para que eu possa ajudar melhor?"
+    },
+    {
+        "sender": "user",
+        "text": "Quais são as especializações disponiveis?"
+    },
+    {
+        "sender": "bot",
+        "text": "Há diversas especializações disponíveis. Para te ajudar melhor, você poderia me dizer em qual área de conhecimento você está interessado?  Por exemplo,  Ciências da Saúde, Direito,  Exatas, etc.?"
+    },
+    {
+        "sender": "user",
+        "text": "Direito"
+    },
+    {
+        "sender": "bot",
+        "text": "Na área de Direito, temos as seguintes especializações:  Direito e Processo do Trabalho para Advogados, e Direito e Processo Eleitoral. Para mais informações sobre outras possíveis especializações na área jurídica, recomendo entrar em contato com a secretaria da Escola de Pós-Graduação."
+    },
+    {
+        "sender": "user",
+        "text": "Me fale sobre a Direito e Processo do trabalho para advogados"
+    },
+    {
+        "sender": "bot",
+        "text": "O curso de Especialização em Direito e Processo do Trabalho para Advogados é voltado para advogados e bacharéis em Direito.  Tem duração de 12 meses, é 100% presencial, reconhecido pelo MEC e inicia em 15/09/2023. A taxa de matrícula é de R$ 450,00 e a mensalidade de R$ 450,00.  Para mais informações, acesse: https://escoladepos.ufg.br/cursos/curso-de-especializacao-em-direito-e-processo-do-trabalho-para-advogados/"
+    }
+]
