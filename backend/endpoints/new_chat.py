@@ -8,7 +8,7 @@ router = APIRouter()
 
 @router.get("/api/new_chat")
 async def new_chat():
-    """Inicia um novo chat somente se não houver um chat_id existente."""
+    """Inicia um novo chat e envia uma mensagem de boas-vindas do chatbot Ana."""
     try:
         session_id = "abc123"  # Este identificador pode vir do frontend se quiser associar a diferentes usuários
 
@@ -19,6 +19,13 @@ async def new_chat():
             chat_id = datetime.now().strftime("%Y%m%d_%H%M%S")
             chat_sessions[session_id] = chat_id
 
-        return {"message": "Chat iniciado", "chat_id": chat_id}
+        # Mensagem de boas-vindas do bot Ana
+        welcome_message = {
+            "sender": "bot",
+            "text": "Olá! Eu sou Ana, assistente virtual da Escola de Pós-Graduação da Universidade Federal. Como posso ajudá-lo?",
+            "time": datetime.now().strftime("%H:%M")
+        }
+
+        return {"message": "Chat iniciado", "chat_id": chat_id, "bot_reply": welcome_message}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

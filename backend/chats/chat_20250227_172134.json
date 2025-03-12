@@ -1,0 +1,42 @@
+[
+    {
+        "sender": "user",
+        "text": "Oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudar você em relação à Escola de Pós-Graduação da UFG ou à UFG?"
+    },
+    {
+        "sender": "user",
+        "text": "eu sou o bruno"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá, Bruno!  Como posso ajudá-lo com relação à Escola de Pós-Graduação da UFG ou à UFG?"
+    },
+    {
+        "sender": "user",
+        "text": "Qual meu nome?"
+    },
+    {
+        "sender": "bot",
+        "text": "Seu nome é Bruno."
+    },
+    {
+        "sender": "user",
+        "text": "Qual meu nome?"
+    },
+    {
+        "sender": "bot",
+        "text": "Seu nome é Bruno."
+    },
+    {
+        "sender": "user",
+        "text": "qual meu nome?"
+    },
+    {
+        "sender": "bot",
+        "text": "Seu nome é Bruno."
+    }
+]

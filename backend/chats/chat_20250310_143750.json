@@ -1,0 +1,50 @@
+[
+    {
+        "sender": "user",
+        "text": "Oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso te ajudar hoje?"
+    },
+    {
+        "sender": "user",
+        "text": "Quem é você e qual sua função?"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Sou Ana, a assistente virtual da Escola de Pós-Graduação da Universidade Federal.  Minha função é fornecer informações sobre a pós-graduação da instituição."
+    },
+    {
+        "sender": "user",
+        "text": "O que é a escola de pós, e o que é UFG?"
+    },
+    {
+        "sender": "bot",
+        "text": "A Escola de Pós da Universidade Federal de Goiás (UFG) oferece cursos de pós-graduação lato sensu, como especializações e MBAs.  A UFG é a Universidade Federal de Goiás."
+    },
+    {
+        "sender": "user",
+        "text": "Quais cursos vcs oferecem para quem é formado em area de TI?"
+    },
+    {
+        "sender": "bot",
+        "text": "Com base nas informações disponíveis, não consigo listar cursos específicos para formados em TI.  Para saber quais cursos de pós-graduação são compatíveis com sua formação, recomendo entrar em contato com a secretaria da Escola de Pós-Graduação pelo telefone 62 3521-1076 ou e-mail escoladepos@ufg.br."
+    },
+    {
+        "sender": "user",
+        "text": "Ok"
+    },
+    {
+        "sender": "bot",
+        "text": "De nada! Se precisar de mais alguma coisa, estarei por aqui."
+    },
+    {
+        "sender": "user",
+        "text": "Blz"
+    },
+    {
+        "sender": "bot",
+        "text": "Ok."
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "sender": "user",
+        "text": "oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso ajudá-lo com relação à Escola de Pós-Graduação da UFG ou à UFG?"
+    },
+    {
+        "sender": "user",
+        "text": "Fale sobre a pos em enfrentamento a violencia contrra mulheres e meninas"
+    },
+    {
+        "sender": "bot",
+        "text": "A Pós-Graduação em Enfrentamento à Violência Contra Mulheres e Meninas é um curso da área de Ciências Sociais Aplicadas, com carga horária de 360 horas, na modalidade 100% remota e reconhecido pelo MEC.  Ele visa capacitar profissionais do Sistema Único de Segurança Pública (SUSP) que atuam no atendimento a vítimas de violência doméstica e em emergências em centros de operações militares e guardas municipais.  O curso é gratuito e teve início em 13/02/2024. Mais informações podem ser encontradas em: https://escoladepos.ufg.br/cursos/curso-001/"
+    },
+    {
+        "sender": "user",
+        "text": "estou"
+    },
+    {
+        "sender": "bot",
+        "text": "Por favor, complete sua frase para que eu possa entender sua pergunta e ajudá-lo."
+    }
+]

@@ -1,0 +1,114 @@
+[
+    {
+        "sender": "user",
+        "text": "oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso te ajudar hoje?"
+    },
+    {
+        "sender": "user",
+        "text": "teste"
+    },
+    {
+        "sender": "bot",
+        "text": "Não entendi sua pergunta. Poderia reformular para que eu possa ajudar melhor?"
+    },
+    {
+        "sender": "user",
+        "text": "iu"
+    },
+    {
+        "sender": "bot",
+        "text": "Não entendi sua pergunta. Poderia reformular para que eu possa ajudar melhor?"
+    },
+    {
+        "sender": "user",
+        "text": "iu"
+    },
+    {
+        "sender": "bot",
+        "text": "Não entendi sua pergunta. Poderia reformular para que eu possa ajudar melhor?"
+    },
+    {
+        "sender": "user",
+        "text": "oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso te ajudar hoje?"
+    },
+    {
+        "sender": "user",
+        "text": "oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso te ajudar hoje?"
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Não entendi sua pergunta. Poderia reformular para que eu possa ajudar melhor?"
+    },
+    {
+        "sender": "user",
+        "text": "oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso te ajudar hoje?"
+    },
+    {
+        "sender": "user",
+        "text": "oi"
+    },
+    {
+        "sender": "bot",
+        "text": "Olá! Como posso te ajudar hoje?"
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Não entendi sua pergunta. Poderia reformular para que eu possa ajudar melhor?"
+    },
+    {
+        "sender": "user",
+        "text": "quem são os professores?"
+    },
+    {
+        "sender": "bot",
+        "text": "Há diversos professores na Escola de Pós-Graduação.  Para te ajudar melhor, você poderia especificar em qual área ou curso você está interessado?"
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Não entendi sua pergunta. Poderia reformular para que eu possa ajudar melhor?"
+    },
+    {
+        "sender": "user",
+        "text": "a"
+    },
+    {
+        "sender": "bot",
+        "text": "Não entendi sua pergunta. Poderia reformular para que eu possa ajudar melhor?"
+    },
+    {
+        "sender": "user",
+        "text": "Qeum sao os professores?"
+    },
+    {
+        "sender": "bot",
+        "text": "Há muitos professores na Escola de Pós-Graduação. Para te ajudar melhor, você poderia especificar em qual área ou curso você está interessado?"
+    }
+]
